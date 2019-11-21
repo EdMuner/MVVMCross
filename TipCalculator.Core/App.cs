@@ -2,7 +2,7 @@
 using MvvmCross.ViewModels;
 using TipCalculator.Core.ViewModels;
 
-namespace TipCalculator.Core
+namespace Factorial.Core
 {
     public class App : MvxApplication
     {

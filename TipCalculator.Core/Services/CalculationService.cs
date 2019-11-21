@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TipCalculator.Core.Services
+﻿namespace TipCalculator.Core.Services
 {
     public class CalculationService : ICalculationService
     {
-        public decimal TipAmount(decimal subtotal, double generosity)
+        public decimal TipAmount(decimal subTotal, double generosity)
         {
-            return subtotal * (Decimal)(generosity / 100);
+            return subTotal * (decimal)(generosity / 100);
         }
     }
 }

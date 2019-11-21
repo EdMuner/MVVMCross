@@ -1,7 +1,4 @@
 ﻿using MvvmCross.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using TipCalculator.Core.Services;
 
@@ -19,13 +16,13 @@ namespace TipCalculator.Core.ViewModels
             _calculationService = calculationService;
         }
 
-        public decimal Subtotal
+        public decimal SubTotal
         {
             get => _subTotal;
             set
             {
                 _subTotal = value;
-                RaisePropertyChanged(() => Subtotal);
+                RaisePropertyChanged(() => SubTotal);
                 Recalculate();
             }
         }
@@ -36,7 +33,7 @@ namespace TipCalculator.Core.ViewModels
             set
             {
                 _tip = value;
-                RaisePropertyChanged(() => Tip);    
+                RaisePropertyChanged(() => Tip);
             }
         }
 
@@ -47,20 +44,22 @@ namespace TipCalculator.Core.ViewModels
             {
                 _generosity = value;
                 RaisePropertyChanged(() => Generosity);
+                Recalculate();
             }
         }
 
-        public async override Task Initialize()
+        public override async Task Initialize()
         {
             await base.Initialize();
-            Subtotal = 100;
+
+            SubTotal = 100;
             Generosity = 10;
             Recalculate();
         }
 
         private void Recalculate()
         {
-            Tip = _calculationService.TipAmount(Subtotal, Generosity);
+            Tip = _calculationService.TipAmount(SubTotal, Generosity);
         }
     }
 }
