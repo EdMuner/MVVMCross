@@ -11,9 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TipCalculator.Android", "Ti
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factorial", "Factorial", "{8B465A9D-828A-4357-B7DC-183B8EB6E173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial.Core", "Factorial.Core\Factorial.Core.csproj", "{589B90BF-18DC-433F-85E3-3789E4E11638}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factorial.Core", "Factorial.Core\Factorial.Core.csproj", "{589B90BF-18DC-433F-85E3-3789E4E11638}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial.Android", "Factorial.Android\Factorial.Android.csproj", "{37B44CEF-4A2B-4048-8224-3A53EFB2EF9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fibonacci", "Fibonacci", "{69DC162C-AA00-45B3-976C-8D38E2237934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci.Core", "Fibonacci.Core\Fibonacci.Core.csproj", "{31864779-A7F4-4A99-9326-650D36393014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci.Android", "Fibonacci.Android\Fibonacci.Android.csproj", "{23CAFCBF-94D7-466E-A71E-40E131D5E967}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,16 @@ Global
 		{37B44CEF-4A2B-4048-8224-3A53EFB2EF9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37B44CEF-4A2B-4048-8224-3A53EFB2EF9E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{37B44CEF-4A2B-4048-8224-3A53EFB2EF9E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{31864779-A7F4-4A99-9326-650D36393014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31864779-A7F4-4A99-9326-650D36393014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31864779-A7F4-4A99-9326-650D36393014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31864779-A7F4-4A99-9326-650D36393014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +66,8 @@ Global
 		{1D8CEA10-1487-40D1-9270-B63CE13ADBDE} = {3E92640A-45D7-45A6-A959-3ED0856AF395}
 		{589B90BF-18DC-433F-85E3-3789E4E11638} = {8B465A9D-828A-4357-B7DC-183B8EB6E173}
 		{37B44CEF-4A2B-4048-8224-3A53EFB2EF9E} = {8B465A9D-828A-4357-B7DC-183B8EB6E173}
+		{31864779-A7F4-4A99-9326-650D36393014} = {69DC162C-AA00-45B3-976C-8D38E2237934}
+		{23CAFCBF-94D7-466E-A71E-40E131D5E967} = {69DC162C-AA00-45B3-976C-8D38E2237934}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {44FAF758-0A4E-41A1-AB07-144578899FC0}
